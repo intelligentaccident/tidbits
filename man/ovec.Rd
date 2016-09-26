@@ -2,20 +2,25 @@
 % Please edit documentation in R/ovec_function.R
 \name{ovec}
 \alias{ovec}
-\title{Function for generating a character vector from crossing vectors, separated by sep}
+\title{Crossed character vectors}
 \usage{
 ovec(..., FUN = function(a, b) paste0(a, b))
 }
 \arguments{
-\item{...}{A set of parameters that can be interpreted as character vectors.}
+\item{...}{A set of parameters that can be coerced by as.character.}
 
-\item{FUN}{A function to combine parameters. Defaults to function(a, b) paste0(a, b)}
+\item{FUN}{A function to combine parameters. Defaults to \code{function(a, b) paste0(a, b)}}
+}
+\value{
+Character vector containing all combinations of provided parameters
 }
 \description{
-Function for generating a character vector from crossing vectors, separated by sep
+Function which uses \code{\link{outer}} and provided function FUN to generate a character vector of all possible combinations of
+the provided parameters, each coerced by as.character
 }
 \examples{
-ovec(c("x", "y", "z"), 5:10)
+ovec(c("x", "y", "z"), 1:3)
+# c("x1", "x2", "x3", "y1", "y2", "y3", "z1", "z2", "z3")
 }
 \keyword{character}
 \keyword{outer,}
