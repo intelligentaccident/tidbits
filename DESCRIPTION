@@ -1,0 +1,10 @@
+Package: tidbits
+Type: Package
+Title: A number of small, helpful functions
+Version: 0.1.0
+Author: Kim Rand-Hendriksen
+Maintainer: Kim Rand-Hendriksen <intelligentaccident@gmail.com>
+Description: More about what it does (maybe more than one line)
+Depends: R (>= 3.0.1)
+License: >GPL-2
+LazyData: TRUE
