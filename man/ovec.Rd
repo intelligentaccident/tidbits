@@ -15,8 +15,7 @@ ovec(..., FUN = function(a, b) paste0(a, b))
 Character vector containing all combinations of provided parameters
 }
 \description{
-Function which uses \code{\link{outer}} and provided function FUN to generate a character vector of all possible combinations of
-the provided parameters, each coerced by as.character
+Crossed character vectors
 }
 \examples{
 ovec(c("x", "y", "z"), 1:3)
