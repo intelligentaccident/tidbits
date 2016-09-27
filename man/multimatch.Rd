@@ -2,11 +2,16 @@
 % Please edit documentation in R/multimatch_function.R
 \name{multimatch}
 \alias{multimatch}
+\alias{multin}
 \alias{multin,}
 \alias{multwhich}
 \title{Match between rows of data.frames}
 \usage{
 multimatch(dfx, dftable)
+
+multin(dfx, dftable)
+
+multwhich(dfx, dftable)
 }
 \arguments{
 \item{dfx}{data.frame with rows to be matched}
@@ -16,11 +21,17 @@ multimatch(dfx, dftable)
 \value{
 \code{multimatch} returns a vector of position of (first) matches of its first argument in its second.
 
-\code{multin} corresponds to \code{\link{\%in\%}}
+\code{multin} corresponds to \code{\link[base]{\%in\%}}
 
-\code{multwhich} corresponds to \link{which}
+\code{multwhich} corresponds to \code{\link[base]{which}}
 }
 \description{
 Returns a match performed at the level of rows in data.frames.
 }
+\section{Functions}{
+\itemize{
+\item \code{multin}: corresponds to \code{\link[base]{\%in\%}}
+
+\item \code{multwhich}: corresponds to \code{\link[base]{which}}
+}}
 
