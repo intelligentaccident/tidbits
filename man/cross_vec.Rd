@@ -18,7 +18,7 @@ Character vector containing all combinations of provided parameters
 Returns a char vector containing all combinations of provided vectors, each coerced by as.character.
 }
 \examples{
-ovec(c("x", "y", "z"), 1:3)
+cross_vec(c("x", "y", "z"), 1:3)
 # c("x1", "x2", "x3", "y1", "y2", "y3", "z1", "z2", "z3")
 
 }
