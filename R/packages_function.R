@@ -4,7 +4,8 @@
 #' @return Returns nothing.
 #' @description Loads package x if it exists, otherwise tries to download x.
 #' @keywords install.packages, library
-packages<-function(x){
+
+packages <-function(x){
   x<-as.character(match.call()[[2]])
   if (!require(x,character.only=TRUE)){
     install.packages(pkgs=x,repos="http://cran.r-project.org")
